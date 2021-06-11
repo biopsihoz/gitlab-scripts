@@ -6,7 +6,6 @@
 #
 
 # Задайте переменные ниже
-echo "Начинаем:"
 GITLAB_URL=https://gitlab.domain.com
 GROUP=gitlab_group
 RELEASE_BRANCH=release%2F2021.06
@@ -16,6 +15,8 @@ PROJECTS=(
 project1
 project2
 )
+
+echo "Начинаем:"
 echo "${PROJECTS[*]}"
 for p in "${PROJECTS[@]}"; do
     printf '\nПроект: %s' "$p"
